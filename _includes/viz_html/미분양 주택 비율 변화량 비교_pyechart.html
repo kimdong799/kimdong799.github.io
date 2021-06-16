@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/westeros.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'dc944f53a73a4284aa6d74ffbc54c65f')">미분양 주택 비율 변화 추이</button>
+            <button class="tablinks" onclick="showChart(event, 'd22fd257daf344138011ed594d9c63db')">연도별 미분양 주택 비율</button>
+    </div>
+
+    <div class="box">
+                <div id="dc944f53a73a4284aa6d74ffbc54c65f" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_dc944f53a73a4284aa6d74ffbc54c65f = echarts.init(
+            document.getElementById('dc944f53a73a4284aa6d74ffbc54c65f'), 'westeros', {renderer: 'canvas'});
+        var option_dc944f53a73a4284aa6d74ffbc54c65f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\uc11c\uc6b8",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2007-01-01T00:00:00",
+                    0.0084
+                ],
+                [
+                    "2008-01-01T00:00:00",
+                    0.0092
+                ],
+                [
+                    "2009-01-01T00:00:00",
+                    0.0147
+                ],
+                [
+                    "2010-01-01T00:00:00",
+                    0.0197
+                ],
+                [
+                    "2011-01-01T00:00:00",
+                    0.0263
+                ],
+                [
+                    "2012-01-01T00:00:00",
+                    0.0393
+                ],
+                [
+                    "2013-01-01T00:00:00",
+                    0.0492
+                ],
+                [
+                    "2014-01-01T00:00:00",
+                    0.0468
+                ],
+                [
+                    "2015-01-01T00:00:00",
+                    0.0196
+                ],
+                [
+                    "2016-01-01T00:00:00",
+                    0.0085
+                ],
+                [
+                    "2017-01-01T00:00:00",
+                    0.0018
+                ],
+                [
+                    "2018-01-01T00:00:00",
+                    0.0007
+                ],
+                [
+                    "2019-01-01T00:00:00",
+                    0.0036
+                ],
+                [
+                    "2020-01-01T00:00:00",
+                    0.0023
+                ],
+                [
+                    "2021-01-01T00:00:00",
+                    0.0042
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\ub300\uc804",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2007-01-01T00:00:00",
+                    0.0156
+                ],
+                [
+                    "2008-01-01T00:00:00",
+                    0.0197
+                ],
+                [
+                    "2009-01-01T00:00:00",
+                    0.0229
+                ],
+                [
+                    "2010-01-01T00:00:00",
+                    0.0252
+                ],
+                [
+                    "2011-01-01T00:00:00",
+                    0.0195
+                ],
+                [
+                    "2012-01-01T00:00:00",
+                    0.0198
+                ],
+                [
+                    "2013-01-01T00:00:00",
+                    0.0173
+                ],
+                [
+                    "2014-01-01T00:00:00",
+                    0.0138
+                ],
+                [
+                    "2015-01-01T00:00:00",
+                    0.0207
+                ],
+                [
+                    "2016-01-01T00:00:00",
+                    0.0132
+                ],
+                [
+                    "2017-01-01T00:00:00",
+                    0.0159
+                ],
+                [
+                    "2018-01-01T00:00:00",
+                    0.017
+                ],
+                [
+                    "2019-01-01T00:00:00",
+                    0.0189
+                ],
+                [
+                    "2020-01-01T00:00:00",
+                    0.0274
+                ],
+                [
+                    "2021-01-01T00:00:00",
+                    0.0375
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\ub300\uad6c",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2007-01-01T00:00:00",
+                    0.1252
+                ],
+                [
+                    "2008-01-01T00:00:00",
+                    0.1291
+                ],
+                [
+                    "2009-01-01T00:00:00",
+                    0.131
+                ],
+                [
+                    "2010-01-01T00:00:00",
+                    0.1471
+                ],
+                [
+                    "2011-01-01T00:00:00",
+                    0.1448
+                ],
+                [
+                    "2012-01-01T00:00:00",
+                    0.0796
+                ],
+                [
+                    "2013-01-01T00:00:00",
+                    0.0273
+                ],
+                [
+                    "2014-01-01T00:00:00",
+                    0.0166
+                ],
+                [
+                    "2015-01-01T00:00:00",
+                    0.0117
+                ],
+                [
+                    "2016-01-01T00:00:00",
+                    0.0242
+                ],
+                [
+                    "2017-01-01T00:00:00",
+                    0.0062
+                ],
+                [
+                    "2018-01-01T00:00:00",
+                    0.0079
+                ],
+                [
+                    "2019-01-01T00:00:00",
+                    0.023
+                ],
+                [
+                    "2020-01-01T00:00:00",
+                    0.0334
+                ],
+                [
+                    "2021-01-01T00:00:00",
+                    0.0187
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\uc138\uc885",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2007-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2008-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2009-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2010-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2011-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2012-01-01T00:00:00",
+                    0.0001
+                ],
+                [
+                    "2013-01-01T00:00:00",
+                    0.0043
+                ],
+                [
+                    "2014-01-01T00:00:00",
+                    0.0085
+                ],
+                [
+                    "2015-01-01T00:00:00",
+                    0.001
+                ],
+                [
+                    "2016-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2017-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2018-01-01T00:00:00",
+                    0.0036
+                ],
+                [
+                    "2019-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2020-01-01T00:00:00",
+                    0.0
+                ],
+                [
+                    "2021-01-01T00:00:00",
+                    0.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\uacbd\uae30",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2007-01-01T00:00:00",
+                    0.0626
+                ],
+                [
+                    "2008-01-01T00:00:00",
+                    0.1402
+                ],
+                [
+                    "2009-01-01T00:00:00",
+                    0.1428
+                ],
+                [
+                    "2010-01-01T00:00:00",
+                    0.2081
+                ],
+                [
+                    "2011-01-01T00:00:00",
+                    0.2958
+                ],
+                [
+                    "2012-01-01T00:00:00",
+                    0.3343
+                ],
+                [
+                    "2013-01-01T00:00:00",
+                    0.3829
+                ],
+                [
+                    "2014-01-01T00:00:00",
+                    0.368
+                ],
+                [
+                    "2015-01-01T00:00:00",
+                    0.3917
+                ],
+                [
+                    "2016-01-01T00:00:00",
+                    0.3055
+                ],
+                [
+                    "2017-01-01T00:00:00",
+                    0.19
+                ],
+                [
+                    "2018-01-01T00:00:00",
+                    0.1204
+                ],
+                [
+                    "2019-01-01T00:00:00",
+                    0.1202
+                ],
+                [
+                    "2020-01-01T00:00:00",
+                    0.0925
+                ],
+                [
+                    "2021-01-01T00:00:00",
+                    0.0891
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc11c\uc6b8",
+                "\ub300\uc804",
+                "\ub300\uad6c",
+                "\uc138\uc885",
+                "\uacbd\uae30"
+            ],
+            "selected": {
+                "\uc11c\uc6b8": true,
+                "\ub300\uc804": true,
+                "\ub300\uad6c": true,
+                "\uc138\uc885": true,
+                "\uacbd\uae30": true
+            },
+            "show": true,
+            "left": "60%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 0,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2007-01-01T00:00:00",
+                "2008-01-01T00:00:00",
+                "2009-01-01T00:00:00",
+                "2010-01-01T00:00:00",
+                "2011-01-01T00:00:00",
+                "2012-01-01T00:00:00",
+                "2013-01-01T00:00:00",
+                "2014-01-01T00:00:00",
+                "2015-01-01T00:00:00",
+                "2016-01-01T00:00:00",
+                "2017-01-01T00:00:00",
+                "2018-01-01T00:00:00",
+                "2019-01-01T00:00:00",
+                "2020-01-01T00:00:00",
+                "2021-01-01T00:00:00"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\uc2e4\uac70\ub798\uc9c0\uc218",
+            "show": true,
+            "scale": true,
+            "nameLocation": "center",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": "Datamin",
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728 \ubcc0\ud654 \ucd94\uc774",
+            "subtext": "\ucee4\uc11c\uc640 \uc2a4\ud06c\ub864\uc744 \uc870\uc808\ud574 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728 \ubcc0\ud654\ub97c \ube44\uad50\ud574\ubcf4\uc138\uc694!",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        },
+        {
+            "show": true,
+            "type": "inside",
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_dc944f53a73a4284aa6d74ffbc54c65f.setOption(option_dc944f53a73a4284aa6d74ffbc54c65f);
+    </script>
+                <div id="d22fd257daf344138011ed594d9c63db" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_d22fd257daf344138011ed594d9c63db = echarts.init(
+            document.getElementById('d22fd257daf344138011ed594d9c63db'), 'westeros', {renderer: 'canvas'});
+        var option_d22fd257daf344138011ed594d9c63db = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "bar",
+                "legendHoverLink": true,
+                "data": [
+                    0.42,
+                    1.87,
+                    3.75,
+                    8.91,
+                    0.0
+                ],
+                "showBackground": false,
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8,
+                    "formatter": "{c}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "2007\ub144\ub3c4",
+                "2008\ub144\ub3c4",
+                "2009\ub144\ub3c4",
+                "2010\ub144\ub3c4",
+                "2011\ub144\ub3c4",
+                "2012\ub144\ub3c4",
+                "2013\ub144\ub3c4",
+                "2014\ub144\ub3c4",
+                "2015\ub144\ub3c4",
+                "2016\ub144\ub3c4",
+                "2017\ub144\ub3c4",
+                "2018\ub144\ub3c4",
+                "2019\ub144\ub3c4",
+                "2020\ub144\ub3c4",
+                "2021\ub144\ub3c4"
+            ]
+        },
+        "xAxis": [
+            {
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "data": [
+                    "\uc11c\uc6b8[\ud638]",
+                    "\ub300\uad6c[\ud638]",
+                    "\ub300\uc804[\ud638]",
+                    "\uacbd\uae30[\ud638]",
+                    "\uc138\uc885[\ud638]"
+                ]
+            }
+        ],
+        "yAxis": [
+            {
+                "name": "\ub9cc\uc871\ub3c4(%)",
+                "show": true,
+                "scale": false,
+                "nameLocation": "start",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "max": 100,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": false,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                }
+            }
+        ]
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.84,
+                        12.52,
+                        1.56,
+                        6.26,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.92,
+                        12.91,
+                        1.97,
+                        14.02,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.47,
+                        13.1,
+                        2.29,
+                        14.28,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.97,
+                        14.71,
+                        2.52,
+                        20.81,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        2.63,
+                        14.48,
+                        1.95,
+                        29.58,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        3.93,
+                        7.96,
+                        1.98,
+                        33.43,
+                        0.01
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.92,
+                        2.73,
+                        1.73,
+                        38.29,
+                        0.43
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        4.68,
+                        1.66,
+                        1.38,
+                        36.8,
+                        0.85
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        1.96,
+                        1.17,
+                        2.07,
+                        39.17,
+                        0.1
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.85,
+                        2.42,
+                        1.32,
+                        30.55,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.18,
+                        0.62,
+                        1.59,
+                        19.0,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.07,
+                        0.79,
+                        1.7,
+                        12.04,
+                        0.36
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.36,
+                        2.3,
+                        1.89,
+                        12.02,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.23,
+                        3.34,
+                        2.74,
+                        9.25,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "series": [
+                {
+                    "type": "bar",
+                    "legendHoverLink": true,
+                    "data": [
+                        0.42,
+                        1.87,
+                        3.75,
+                        8.91,
+                        0.0
+                    ],
+                    "showBackground": false,
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8,
+                        "formatter": "{c}%"
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\uc11c\uc6b8[\ud638]",
+                        "\ub300\uad6c[\ud638]",
+                        "\ub300\uc804[\ud638]",
+                        "\uacbd\uae30[\ud638]",
+                        "\uc138\uc885[\ud638]"
+                    ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "name": "\ub9cc\uc871\ub3c4(%)",
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "start",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "max": 100,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc5f0\ub3c4\ubcc4 \ubbf8\ubd84\uc591 \uc8fc\ud0dd \ube44\uc728",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "axis",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "cross"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_d22fd257daf344138011ed594d9c63db.setOption(option_d22fd257daf344138011ed594d9c63db);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
